@@ -199,54 +199,131 @@
 
    
 
-    <!-- TEAM SECTION -->
-    <section id="team" class="container">
-        <h2>Organizing Committee & Invited Speakers</h2>
-        <div class="speaker-grid">
-            <!-- Organizer 1 -->
-            <div class="speaker-card">
-                <img src="assets/images/speakers/senjuti-dutta.jpg" alt="Dr. Senjuti Dutta">
-                <h3>Senjuti Dutta (Organizer)</h3>
-                <p class="affiliation">University of Tennessee, Knoxville</p>
-            </div>
-            <!-- Organizer 2 -->
-            <div class="speaker-card">
-                <img src="assets/images/speakers/R_Alexander_Bentley.png" alt="Prof. Alex Bentley">
-                <h3>Alex Bentley (Organizer)</h3>
-                <p class="affiliation">University of Tennessee, Knoxville</p>
-            </div>
-            <!-- Organizer 3 -->
-            <div class="speaker-card">
-                <img src="assets/images/speakers/chuanren-liu.jpg" alt="Chuanren Liu">
-                <h3>Chuanren Liu (Organizer)</h3>
-                <p class="affiliation">University of Tennessee, Knoxville</p>
-            </div>
-            <!-- Speaker 1 -->
-            <div class="speaker-card">
-                <img src="assets/images/speakers/sergi-valverde.jpg" alt="Sergi Valverde">
-                <h3>Sergi Valverde</h3>
-                <p class="affiliation">Institute of Evolutionary Biology</p>
-            </div>
-            <!-- Speaker 2 -->
-            <div class="speaker-card">
-                <img src="assets/images/speakers/giordano-demarzo.jpg" alt="Giordano De Marzo">
-                <h3>Giordano De Marzo</h3>
-                <p class="affiliation">University of Konstanz</p>
-            </div>
-            <!-- Speaker 3 -->
-            <div class="speaker-card">
-                <img src="assets/images/speakers/ryan-boyd.jpg" alt="Ryan Boyd">
-                <h3>Ryan Boyd</h3>
-                <p class="affiliation">Vanderbilt University</p>
-            </div>
-            <!-- Speaker 4 -->
-            <div class="speaker-card">
-                <img src="assets/images/speakers/frederico-rossano.jpg" alt="Frederico Rossano">
-                <h3>Federico Rossano</h3>
-                <p class="affiliation">University of California, San Diego</p>
-            </div>
-        </div>
-    </section>
+    /* ================================
+   ORGANIZERS & INVITED SPEAKERS
+   ================================ */
+
+.team-group {
+    margin-top: 2.5rem;
+}
+
+.team-section-title {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Organizer cards */
+.organizer-card .role {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.7;
+    margin: 0.25rem 0;
+}
+
+
+/* ================================
+   INVITED SPEAKERS HIGHLIGHT
+   ================================ */
+
+.invited-speakers-section {
+    margin-top: 4rem;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(50, 90, 160, 0.07),
+        rgba(120, 80, 180, 0.06)
+    );
+}
+
+.invited-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 2.5rem;
+}
+
+.invited-label {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 0.8rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: #253b80;
+    color: #ffffff;
+}
+
+.invited-heading .team-section-title {
+    font-size: 2rem;
+    margin: 0.25rem 0 0.7rem;
+}
+
+.invited-intro {
+    margin: 0 auto;
+    line-height: 1.65;
+    opacity: 0.8;
+}
+
+
+/* Invited speaker cards */
+.invited-speaker-card {
+    position: relative;
+    padding-top: 2.7rem;
+    border: 1px solid rgba(37, 59, 128, 0.18);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.invited-speaker-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.13);
+}
+
+
+/* Invited Speaker badge */
+.speaker-badge {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background: #253b80;
+    color: white;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+}
+
+.invited-speaker-card h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.invited-speaker-card .affiliation {
+    margin-top: 0.35rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .invited-speakers-section {
+        padding: 2rem 1rem;
+    }
+
+    .invited-heading .team-section-title {
+        font-size: 1.7rem;
+    }
+}
 
     <!-- FOOTER -->
     <footer>
